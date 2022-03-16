@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-uint32-base-rotl",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "description": "Bitwise rotation to the left.",
   "license": "Apache-2.0",
   "author": {
