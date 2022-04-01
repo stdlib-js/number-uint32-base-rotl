@@ -1,0 +1,46 @@
+{
+  "name": "@stdlib/number-uint32-base-rotl",
+  "version": "0.0.0",
+  "description": "Bitwise rotation to the left.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/number-uint32-base-rotl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "base",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "types",
+    "type",
+    "rotate",
+    "circshift",
+    "circular",
+    "shift",
+    "rol",
+    "rotl",
+    "rotr",
+    "rotl32",
+    "uint32",
+    "int32",
+    "integer",
+    "int",
+    "unsigned",
+    "signed",
+    "number"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
