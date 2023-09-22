@@ -18,44 +18,47 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # Bitwise Rotation
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Bitwise rotation to the left.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-uint32-base-rotl
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-rotl32 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var rotl32 = require( 'path/to/vendor/umd/number-uint32-base-rotl/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.rotl32;
-})();
-</script>
+var rotl32 = require( '@stdlib/number-uint32-base-rotl' );
 ```
 
 #### rotl32( x, shift )
@@ -110,15 +113,10 @@ bstr = toBinaryStringUint32( y );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-to-binary-string@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var toBinaryStringUint32 = require( '@stdlib/number-uint32-base-to-binary-string' );
+var MAX_INT = require( '@stdlib/constants-uint32-max' );
+var rotl32 = require( '@stdlib/number-uint32-base-rotl' );
 
 var HALF;
 var x;
@@ -137,11 +135,6 @@ for ( i = 0; i < 100; i++ ) {
     y = rotl32( x, 10 );
     console.log( '%d => %s => %s => %d', x, toBinaryStringUint32( x ), toBinaryStringUint32( y ), y );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -195,8 +188,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/number-uint32-base-rotl.svg
 [npm-url]: https://npmjs.org/package/@stdlib/number-uint32-base-rotl
 
-[test-image]: https://github.com/stdlib-js/number-uint32-base-rotl/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/number-uint32-base-rotl/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/number-uint32-base-rotl/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/number-uint32-base-rotl/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/number-uint32-base-rotl/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/number-uint32-base-rotl?branch=main
