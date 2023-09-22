@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-uint32-base-rotl",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Bitwise rotation to the left.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/number-int32-base-to-uint32": "^0.0.7"
+    "@stdlib/number-int32-base-to-uint32": "^0.1.0"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.0.12",
