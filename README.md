@@ -145,6 +145,12 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/number-uint32/base/rotr`][@stdlib/number/uint32/base/rotr]</span><span class="delimiter">: </span><span class="description">bitwise rotation to the right.</span>
+
 </section>
 
 <!-- /.related -->
@@ -217,6 +223,12 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/number-uint32-base-rotl/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/number-uint32-base-rotl/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/number/uint32/base/rotr]: https://github.com/stdlib-js/number-uint32-base-rotr
+
+<!-- </related-links> -->
 
 </section>
 
