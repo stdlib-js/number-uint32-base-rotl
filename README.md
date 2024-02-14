@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-rotl32 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js' )
+rotl32 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@v0.2.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var rotl32 = require( 'path/to/vendor/umd/number-uint32-base-rotl/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@v0.2.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -127,7 +127,7 @@ bstr = toBinaryStringUint32( y );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-to-binary-string@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@v0.2.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
