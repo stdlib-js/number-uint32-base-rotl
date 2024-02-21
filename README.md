@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-uint32-base-rotl/tags). For example,
+
+```javascript
 import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@v0.2.1-esm/index.mjs';
 ```
 
@@ -105,7 +110,7 @@ bstr = toBinaryStringUint32( y );
 
 import toBinaryStringUint32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-to-binary-string@esm/index.mjs';
 import MAX_INT from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@esm/index.mjs';
-import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@v0.2.1-esm/index.mjs';
+import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@esm/index.mjs';
 
 var HALF;
 var x;
