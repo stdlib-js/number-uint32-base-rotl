@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@esm/index.mjs';
+import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@v0.2.1-esm/index.mjs';
 ```
 
 #### rotl32( x, shift )
@@ -105,7 +105,7 @@ bstr = toBinaryStringUint32( y );
 
 import toBinaryStringUint32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-to-binary-string@esm/index.mjs';
 import MAX_INT from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@esm/index.mjs';
-import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@esm/index.mjs';
+import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@v0.2.1-esm/index.mjs';
 
 var HALF;
 var x;
