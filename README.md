@@ -35,19 +35,32 @@ limitations under the License.
 
 > Bitwise rotation to the left.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-uint32-base-rotl
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-uint32-base-rotl/tags). For example,
-
-```javascript
-import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@v0.2.2-esm/index.mjs';
+var rotl32 = require( '@stdlib/number-uint32-base-rotl' );
 ```
 
 #### rotl32( x, shift )
@@ -55,7 +68,7 @@ import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rot
 Performs a bitwise rotation to the left.
 
 ```javascript
-import toBinaryStringUint32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-to-binary-string@esm/index.mjs';
+var toBinaryStringUint32 = require( '@stdlib/number-uint32-base-to-binary-string' );
 
 var x = 2147483649;
 var bstr = toBinaryStringUint32( x );
@@ -102,15 +115,10 @@ bstr = toBinaryStringUint32( y );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import toBinaryStringUint32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-to-binary-string@esm/index.mjs';
-import MAX_INT from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@esm/index.mjs';
-import rotl32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@esm/index.mjs';
+```javascript
+var toBinaryStringUint32 = require( '@stdlib/number-uint32-base-to-binary-string' );
+var MAX_INT = require( '@stdlib/constants-uint32-max' );
+var rotl32 = require( '@stdlib/number-uint32-base-rotl' );
 
 var HALF;
 var x;
@@ -129,10 +137,6 @@ for ( i = 0; i < 100; i++ ) {
     y = rotl32( x, 10 );
     console.log( '%d => %s => %s => %d', x, toBinaryStringUint32( x ), toBinaryStringUint32( y ), y );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -162,7 +166,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -192,8 +196,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/number-uint32-base-rotl.svg
 [npm-url]: https://npmjs.org/package/@stdlib/number-uint32-base-rotl
 
-[test-image]: https://github.com/stdlib-js/number-uint32-base-rotl/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/number-uint32-base-rotl/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/number-uint32-base-rotl/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/number-uint32-base-rotl/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/number-uint32-base-rotl/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/number-uint32-base-rotl?branch=main
@@ -227,7 +231,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/number/uint32/base/rotr]: https://github.com/stdlib-js/number-uint32-base-rotr/tree/esm
+[@stdlib/number/uint32/base/rotr]: https://github.com/stdlib-js/number-uint32-base-rotr
 
 <!-- </related-links> -->
 
