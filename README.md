@@ -35,38 +35,32 @@ limitations under the License.
 
 > Bitwise rotation to the left.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-uint32-base-rotl
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-rotl32 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var rotl32 = require( 'path/to/vendor/umd/number-uint32-base-rotl/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.rotl32;
-})();
-</script>
+var rotl32 = require( '@stdlib/number-uint32-base-rotl' );
 ```
 
 #### rotl32( x, shift )
@@ -121,15 +115,10 @@ bstr = toBinaryStringUint32( y );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-to-binary-string@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-uint32-max@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-uint32-base-rotl@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var toBinaryStringUint32 = require( '@stdlib/number-uint32-base-to-binary-string' );
+var MAX_INT = require( '@stdlib/constants-uint32-max' );
+var rotl32 = require( '@stdlib/number-uint32-base-rotl' );
 
 var HALF;
 var x;
@@ -148,11 +137,6 @@ for ( i = 0; i < 100; i++ ) {
     y = rotl32( x, 10 );
     console.log( '%d => %s => %s => %d', x, toBinaryStringUint32( x ), toBinaryStringUint32( y ), y );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -199,7 +183,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -247,7 +231,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/number/uint32/base/rotr]: https://github.com/stdlib-js/number-uint32-base-rotr/tree/umd
+[@stdlib/number/uint32/base/rotr]: https://github.com/stdlib-js/number-uint32-base-rotr
 
 <!-- </related-links> -->
 
